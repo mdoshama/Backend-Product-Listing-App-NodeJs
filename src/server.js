@@ -7,7 +7,7 @@ import {db} from "./routes/database";
 let server
 const start = async () => {
     server = Hapi.server({
-        port:8000,
+        port:8081,
         host:'localhost',
     })
    routes.forEach(route => server.route(route));
